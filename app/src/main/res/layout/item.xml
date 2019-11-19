@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="2dp"
+    android:minHeight="120dp"
+    app:cardBackgroundColor="@color/whiteBodyColor"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/itemLayoutMargin">
+
+        <TextView
+            android:id="@+id/username"
+            style="@style/viewParent.headerText"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:textStyle="bold"
+            android:textSize="@dimen/itemAgeSize"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="@dimen/itemCircularImage"
+    android:layout_height="@dimen/itemCircularImage"
+    android:id="@+id/userimage"
+    android:layout_centerVertical="true"
+    android:elevation="13dp"/>
+
+</RelativeLayout>

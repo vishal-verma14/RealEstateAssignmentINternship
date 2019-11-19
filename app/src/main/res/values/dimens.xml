@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="headerTextSize">20sp</dimen>
+    <dimen name="itemLayoutMargin">50dp</dimen>
+    <dimen name="itemAgeSize">14sp</dimen>
+    <dimen name="itemCircularImage">70dp</dimen>
+</resources>
